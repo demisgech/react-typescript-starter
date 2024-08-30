@@ -1,12 +1,10 @@
-import Counter from "./Counter";
-import ListGroup from "./ListGroup";
+import Form from "./components/Forms/Form";
 
 function App() {
   return (
-    <div>
-      <ListGroup />
-      <Counter />
-    </div>
+    <>
+      <Form />
+    </>
   );
 }
 

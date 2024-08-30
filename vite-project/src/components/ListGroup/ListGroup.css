@@ -16,17 +16,17 @@ h1 {
   min-width: 300px;
 }
 
-.list .list-item:first-child {
+.list .listItem:first-child {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.list .list-item:last-child {
+.list .listItem:last-child {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.list-item {
+.listItem {
   font-size: 1.5rem;
   padding: 15px;
   text-align: center;
@@ -34,7 +34,7 @@ h1 {
   background-color: rgb(22, 22, 84);
 }
 
-.list-item:hover {
+.listItem:hover {
   cursor: pointer;
 }
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ListGroup.css";
+import styles from "./ListGroup.module.css";
 const ListGroup = () => {
   let items = [
     "Ethiopia",
@@ -18,11 +18,13 @@ const ListGroup = () => {
       <h1>List Group</h1>
       {/* {items.length === 0 ? <p>No item found.</p> : null} */}
       {items.length === 0 && <p>No item found.</p>}
-      <ul className="list">
+      <ul className={styles.list}>
         {items.map((item, index) => (
           <li
             className={
-              selectedIndex === index ? "list-item active" : "list-item"
+              selectedIndex === index
+                ? [styles.listItem, styles.active].join(" ")
+                : styles.listItem
             }
             key={index}
             onClick={() => setSelectedIndex(index)}
